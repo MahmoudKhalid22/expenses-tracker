@@ -158,7 +158,7 @@ function CategoryCard({ c, reload }: { c: Cat; reload: () => void }) {
         />
         <button onClick={add}>أضف</button>
       </div>
-      {c.expenses.slice(0, 5).map((e) => (
+      {c.expenses.map((e) => (
         <div key={e.id} className="row sp mut">
           <span>
             {e.date} {e.note && "· " + e.note}
