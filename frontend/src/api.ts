@@ -5,7 +5,7 @@ export async function api<T = any>(
   method = "GET",
   body?: unknown,
 ): Promise<T> {
-  const res = await fetch(BASE + path, {
+  const res = await fetch("http://31.97.76.53:3012/api" + path, {
     method,
     headers: {
       "Content-Type": "application/json",
